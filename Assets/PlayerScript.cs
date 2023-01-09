@@ -25,7 +25,7 @@ public class PlayerScript : MonoBehaviour
     {       
         if (Input.GetKeyDown(KeyCode.Space) && !jump)
         {           
-            jump = true;
+            jump = true;            
             rb.AddForce(new Vector3(0f, jumpSpeed, 0f), ForceMode.Impulse);
         }
         anim.SetBool("Run Forward", run);
@@ -52,7 +52,7 @@ public class PlayerScript : MonoBehaviour
             Quaternion rotation = Quaternion.LookRotation(rotateForward.normalized);
             rotation.x = 0;
             rotation.z = 0;
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 50 * Time.deltaTime);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, 10 * Time.deltaTime);
             velocity.y = rb.velocity.y;
             rb.velocity = velocity ;
         }
@@ -74,6 +74,7 @@ public class PlayerScript : MonoBehaviour
             if (jump)
             {
                 jump = false;
+                anim.Play("Idle");
             }
         }
     }
