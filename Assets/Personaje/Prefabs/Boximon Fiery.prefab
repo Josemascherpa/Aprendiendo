@@ -1101,7 +1101,7 @@ GameObject:
   - component: {fileID: 132025480}
   m_Layer: 0
   m_Name: Boximon Fiery
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1145,7 +1145,7 @@ Animator:
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 53df44c50effeb9478969f1e3230f171, type: 3}
   m_Controller: {fileID: 9100000, guid: cad4cd74f41924a4bbcbe916d2f9cb9b, type: 2}
-  m_CullingMode: 2
+  m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0

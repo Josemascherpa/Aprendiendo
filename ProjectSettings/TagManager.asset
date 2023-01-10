@@ -6,6 +6,7 @@ TagManager:
   tags:
   - terreno
   - pastito
+  - poio
   layers:
   - Default
   - TransparentFX
@@ -13,9 +14,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Poios
+  - Player
+  - Pasto
   - 
   - 
   - 

@@ -14,6 +14,8 @@ public class PlayerScript : MonoBehaviour
     private bool attack1 = false;
     private bool attack2 = false;
     [SerializeField]private float jumpSpeed = 5f;
+    [SerializeField] private ParticleSystem particulas;
+    [SerializeField] private ParticleSystem particulas2;
 
     private Vector3 velocity;
     void Start()
@@ -26,7 +28,7 @@ public class PlayerScript : MonoBehaviour
     {
         if (attack1)
         {
-            speed = 10;
+            speed = 15;
         }
         else
         {
@@ -50,6 +52,8 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftControl))
         {
             attack1 = true;
+            particulas.Play();
+            particulas.gameObject.transform.GetChild(0).gameObject.GetComponent<ParticleSystem>().Play();
             anim.Play("Attack1");
         }
 
@@ -114,13 +118,30 @@ public class PlayerScript : MonoBehaviour
                 anim.Play("Idle");
             }
         }
+        if(collision.gameObject.CompareTag("poio") && (attack1 || attack2))
+        {
+            print("CHOQUE POLLO");            
+
+            Vector3 dir = collision.contacts[0].point - this.transform.position;
+            collision.gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            dir = dir.normalized;
+            dir.y += 1f;
+            collision.gameObject.GetComponent<Rigidbody>().AddForce(dir * 30, ForceMode.Impulse);
+            //Destroy(collision.gameObject);
+        }
     }
 
     void Attack01False()
     {
         attack1 = false;
-    }void Attack02False()
+    }
+    void Attack02False()
     {
         attack2 = false;
     }
+    void Particulas2()
+    {
+        particulas2.Play();
+    }
+
 }

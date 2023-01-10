@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 33759382268726956}
   - component: {fileID: 23711529704809334}
   - component: {fileID: 1057299066860462448}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Grass2
   m_TagString: pastito
   m_Icon: {fileID: 0}
