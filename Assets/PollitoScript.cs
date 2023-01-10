@@ -15,7 +15,8 @@ public class PollitoScript : MonoBehaviour
         agente = GetComponent<NavMeshAgent>();
         //HACER UN ARREGLOS CON TODOS LOS PASTITOS
         pastitos = GameObject.FindGameObjectsWithTag("pastito");
-        pastitoABuscar = pastitos[Random.Range(0, pastitos.Length)];      
+        pastitoABuscar = pastitos[Random.Range(0, pastitos.Length)];
+        
     }
 
     // Update is called once per frame
@@ -26,11 +27,11 @@ public class PollitoScript : MonoBehaviour
         {
             agente.destination = pastitoABuscar.transform.position;
         }
-        else
+        else if(pastitos.Length<=0)
         {
-            pastitos = GameObject.FindGameObjectsWithTag("pastito");
-            pastitoABuscar = pastitos[Random.Range(0, pastitos.Length)];
+            agente.destination = GameObject.FindGameObjectWithTag("Player").transform.position;
         }
+        
         
 
     }
@@ -52,10 +53,11 @@ public class PollitoScript : MonoBehaviour
     {
         yield return new WaitForSeconds(8f);        
         pastitoABuscar = null;
+        pastitos = null;
+        pastitos = GameObject.FindGameObjectsWithTag("pastito");
         pastitoABuscar = pastitos[Random.Range(0, pastitos.Length)];        
         buscar = true;
-        agente.enabled = true;
-        print("Nuevo objetivo seteado");
+        agente.enabled = true;       
     }
     
 }
