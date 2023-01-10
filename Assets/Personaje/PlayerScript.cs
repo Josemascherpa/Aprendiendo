@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -15,8 +16,11 @@ public class PlayerScript : MonoBehaviour
     private bool attack2 = false;
     [SerializeField]private float jumpSpeed = 5f;
     [SerializeField] private ParticleSystem particulas;
-    [SerializeField] private ParticleSystem particulas2;
-
+    [SerializeField] private ParticleSystem particulas1;
+    [SerializeField] private ParticleSystem plumas;
+    [SerializeField] private GameObject hitPoio;
+    float hor;
+    float ver;
     private Vector3 velocity;
     void Start()
     {
@@ -26,14 +30,14 @@ public class PlayerScript : MonoBehaviour
     }
     private void Update()
     {
-        if (attack1)
+        if (attack1 && particulas.isPlaying)
         {
             speed = 15;
         }
         else
         {
             speed = 5;
-        }
+        }       
         Inputs();
         Animation();
     }
@@ -49,7 +53,7 @@ public class PlayerScript : MonoBehaviour
             rb.AddForce(new Vector3(0f, jumpSpeed, 0f), ForceMode.Impulse);
         }
         
-        if (Input.GetKeyDown(KeyCode.LeftControl))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && !particulas.isPlaying)
         {
             attack1 = true;
             particulas.Play();
@@ -57,10 +61,10 @@ public class PlayerScript : MonoBehaviour
             anim.Play("Attack1");
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftAlt))
+        if (Input.GetKeyDown(KeyCode.LeftAlt) && !particulas1.isPlaying)
         {
             attack2 = true;
-            anim.Play("Attack2");//TERMINAR ATTACK2 Y ATTACK 1 poner mas vel
+            anim.Play("Attack2");
         }
     }
 
@@ -74,8 +78,13 @@ public class PlayerScript : MonoBehaviour
 
     void Movement()
     {
-        float hor = Input.GetAxisRaw("Horizontal");
-        float ver = Input.GetAxisRaw("Vertical");
+        
+        if (!attack1)
+        {
+            hor = Input.GetAxisRaw("Horizontal");
+            ver = Input.GetAxisRaw("Vertical");
+        }
+        
         if (!jump)
         {
             velocity = Vector3.zero;
@@ -119,15 +128,24 @@ public class PlayerScript : MonoBehaviour
             }
         }
         if(collision.gameObject.CompareTag("poio") && (attack1 || attack2))
-        {          
+        {            
+            Instantiate(hitPoio, collision.contacts[0].point, Quaternion.identity);
             Vector3 dir = collision.contacts[0].point - this.transform.position;
-            collision.gameObject.GetComponent<CapsuleCollider>().enabled = false;
-            dir = dir.normalized;
-            dir.y += 1f;
-            collision.gameObject.GetComponent<Rigidbody>().AddForce(dir * 30, ForceMode.Impulse);
-            //Destroy(collision.gameObject);
+            //SINO PROBAR CON IGNORAR LA COLISION DEL PLAYER
+            dir = dir.normalized;            
+            collision.gameObject.GetComponent<Rigidbody>().AddForce(dir * 20, ForceMode.Impulse);
+            Destroy(collision.gameObject.GetComponent<NavMeshAgent>());
+            StartCoroutine(DestroyPoio(collision.gameObject));
         }
     }
+
+    IEnumerator DestroyPoio(GameObject poio)
+    {
+        yield return new WaitForSeconds(1f);//ACA PARTICULA DE POLLO EXPLOTADO
+        Instantiate(plumas, poio.transform.position, Quaternion.identity);
+        Destroy(poio);
+    }
+
 
     void Attack01False()
     {
@@ -136,10 +154,12 @@ public class PlayerScript : MonoBehaviour
     void Attack02False()
     {
         attack2 = false;
+        
     }
-    void Particulas2()
-    {
-        particulas2.Play();
+    void Particulas1()
+    {        
+        particulas1.Play();
     }
+    
 
 }

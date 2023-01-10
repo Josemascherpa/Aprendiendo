@@ -5,11 +5,9 @@ using UnityEngine.AI;
 
 public class PollitoScript : MonoBehaviour
 {
-    private NavMeshAgent agente;
-    private GameObject pastitoABuscar;
+    private NavMeshAgent agente;    
     private GameObject[] pastitos;
-    private bool buscar = true;
-    private GameObject pastitoYaComido=null;
+    private bool buscar = true;   
     private Animator anim;
     private bool eat= false;
     private bool run=false;
@@ -19,18 +17,31 @@ public class PollitoScript : MonoBehaviour
         agente = GetComponent<NavMeshAgent>();
         //HACER UN ARREGLOS CON TODOS LOS PASTITOS
         pastitos = GameObject.FindGameObjectsWithTag("pastito");
-        pastitoABuscar = pastitos[Random.Range(0, pastitos.Length)];
+        
         
     }
 
     // Update is called once per frame
     void Update()
-    {  
-        if (buscar && pastitoABuscar!=null && agente!=null)
-        {            
+    {
+        print("Buscar:" + buscar);
+        if (buscar)
+        {
+            print("Pastitos que hay cuando busco" + pastitos.Length);
+            var pastito = pastitos[Random.Range(0, pastitos.Length)].transform.position;
+            if(pastito!= null)
+            {
+                agente.destination = pastito;
+                print("Encontre pastito");
+            }
+            else
+            {
+                agente.destination = GameObject.FindGameObjectWithTag("Player").transform.position;
+                print("Debo buscar al player");
+            }          
             eat = false;
             run = true;          
-            agente.destination = pastitoABuscar.transform.position;
+            
         }
         anim.SetBool("Run", run);
         anim.SetBool("Eat", eat);
@@ -52,11 +63,9 @@ public class PollitoScript : MonoBehaviour
             transform.rotation = rotation;            
             StartCoroutine(NuevoObjetivo());
             Destroy(collision.gameObject);
+            print("Comi un pastito y tengo que buscar uno nuevo");
         }
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Destroy(agente);                     
-        }
+        
     }
 
     IEnumerator NuevoObjetivo()
@@ -64,19 +73,10 @@ public class PollitoScript : MonoBehaviour
         yield return new WaitForSeconds(8f);
         if (agente != null)
         {            
-            pastitoABuscar = null;
-            pastitos = null;
             pastitos = GameObject.FindGameObjectsWithTag("pastito");
-            if(pastitos.Length <= 0)
-            {
-                pastitoABuscar = GameObject.FindGameObjectWithTag("Player");
-            }
-            else
-            {
-                pastitoABuscar = pastitos[Random.Range(0, pastitos.Length)];
-            }
             buscar = true;
             agente.enabled = true;
+            print("Busque uno nuevo y actualize los que hay" + pastitos.Length);
         }
         
     }
