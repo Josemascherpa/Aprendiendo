@@ -119,9 +119,7 @@ public class PlayerScript : MonoBehaviour
             }
         }
         if(collision.gameObject.CompareTag("poio") && (attack1 || attack2))
-        {
-            print("CHOQUE POLLO");            
-
+        {          
             Vector3 dir = collision.contacts[0].point - this.transform.position;
             collision.gameObject.GetComponent<CapsuleCollider>().enabled = false;
             dir = dir.normalized;

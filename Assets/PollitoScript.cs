@@ -25,23 +25,18 @@ public class PollitoScript : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {  
+        if (buscar && pastitoABuscar!=null && agente!=null)
+        {            
+            eat = false;
+            run = true;          
+            agente.destination = pastitoABuscar.transform.position;
+        }
         anim.SetBool("Run", run);
         anim.SetBool("Eat", eat);
 
-        if (buscar && pastitoABuscar!=null && agente!=null)
-        {
-            eat = false;
-            run = true;            
-            agente.destination = pastitoABuscar.transform.position;
-        }
-        else if(pastitos.Length<=0 && agente != null)
-        {
-            print("BUSCNADO PLAYER");
-            agente.destination = GameObject.FindGameObjectWithTag("Player").transform.position;
-        }
-        
-        
+
+
 
     }
     private void OnCollisionEnter(Collision collision)
@@ -60,8 +55,7 @@ public class PollitoScript : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("Player"))
         {
-            Destroy(agente);
-             
+            Destroy(agente);                     
         }
     }
 
@@ -73,7 +67,14 @@ public class PollitoScript : MonoBehaviour
             pastitoABuscar = null;
             pastitos = null;
             pastitos = GameObject.FindGameObjectsWithTag("pastito");
-            pastitoABuscar = pastitos[Random.Range(0, pastitos.Length)];
+            if(pastitos.Length <= 0)
+            {
+                pastitoABuscar = GameObject.FindGameObjectWithTag("Player");
+            }
+            else
+            {
+                pastitoABuscar = pastitos[Random.Range(0, pastitos.Length)];
+            }
             buscar = true;
             agente.enabled = true;
         }
