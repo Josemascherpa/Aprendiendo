@@ -37,7 +37,8 @@ public class PlayerScript : MonoBehaviour
         else
         {
             speed = 5;
-        }       
+        }
+       
         Inputs();
         Animation();
     }
@@ -61,7 +62,7 @@ public class PlayerScript : MonoBehaviour
             anim.Play("Attack1");
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftAlt) && !particulas1.isPlaying)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && !particulas1.isPlaying)
         {
             attack2 = true;
             anim.Play("Attack2");
@@ -136,14 +137,18 @@ public class PlayerScript : MonoBehaviour
             collision.gameObject.GetComponent<Rigidbody>().AddForce(dir * 20, ForceMode.Impulse);
             Destroy(collision.gameObject.GetComponent<NavMeshAgent>());
             StartCoroutine(DestroyPoio(collision.gameObject));
+            
         }
     }
 
-    IEnumerator DestroyPoio(GameObject poio)
+    IEnumerator DestroyPoio(GameObject poioGO)
     {
+        
         yield return new WaitForSeconds(1f);//ACA PARTICULA DE POLLO EXPLOTADO
-        Instantiate(plumas, poio.transform.position, Quaternion.identity);
-        Destroy(poio);
+        
+        Vector3 position = poioGO.transform.position;
+        Destroy(poioGO);
+        Instantiate(plumas, position, Quaternion.identity);
     }
 
 

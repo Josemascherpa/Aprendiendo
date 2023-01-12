@@ -27,7 +27,7 @@ public class PollitoScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (buscar)
+        if (buscar && agente.enabled)
         {            
             agente.destination = pastosList.pastos[numRand].gameObject.transform.position;
             eat = false;
