@@ -12,8 +12,11 @@ public class PollitoScript : MonoBehaviour
     private bool run=false;
     [SerializeField] private PastosScript pastosList;
     private int numRand;
+    private bool attackPlayer = false;
+    private Renderer renderer;
     private void Awake()
     {
+        renderer = transform.GetChild(4).GetComponent<Renderer>();
         buscar = true;
         pastosList = GameObject.FindGameObjectWithTag("pastos").GetComponent<PastosScript>();
         anim = GetComponent<Animator>();
@@ -27,12 +30,19 @@ public class PollitoScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (buscar && agente.enabled)
+        if (buscar && agente.enabled && !attackPlayer)
         {            
             agente.destination = pastosList.pastos[numRand].gameObject.transform.position;
             eat = false;
             run = true;
             buscar = false;
+        }else if(buscar && attackPlayer && agente.enabled)
+        {
+            renderer.material.color = Color.red;
+            agente.destination = GameObject.FindGameObjectWithTag("Player").transform.position;
+            eat = false;
+            run = true;
+            
         }
         anim.SetBool("Run", run);
         anim.SetBool("Eat", eat);
@@ -58,12 +68,19 @@ public class PollitoScript : MonoBehaviour
     IEnumerator NuevoObjetivo()
     {
         yield return new WaitForSeconds(8f);
-        if (agente != null)
+        var numeroAttackPlayer = Random.Range(0, 100);
+        if (agente != null && numeroAttackPlayer>5)
         {            
             numRand = Random.Range(0, pastosList.pastos.Count);            
             buscar = true;
             agente.enabled = true;
-            
+
+        }
+        else
+        {
+            agente.enabled = true;
+            attackPlayer = true;
+            buscar = true;
         }
         
     }

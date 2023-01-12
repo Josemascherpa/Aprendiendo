@@ -22,6 +22,11 @@ public class PlayerScript : MonoBehaviour
     float hor;
     float ver;
     private Vector3 velocity;
+
+    private void Awake()
+    {
+        Application.targetFrameRate = 60;
+    }
     void Start()
     {
         anim = GetComponent<Animator>();

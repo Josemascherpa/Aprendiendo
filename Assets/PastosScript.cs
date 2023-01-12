@@ -16,22 +16,5 @@ public class PastosScript : MonoBehaviour
         }
     }    
 
-    // Update is called once per frame
-    void Update()
-    {
-        /*if (Input.GetKeyDown(KeyCode.Space))
-        {
-            for (int i = 0; i < pastos.Count; i++)
-            {
-                print(pastos[i].name);
-            }
-        }
-        if (Input.GetKeyDown(KeyCode.LeftControl))
-        {
-            var random = Random.Range(0, pastos.Count);
-            Destroy(pastos[random].gameObject);
-            pastos.Remove(pastos[random]);
-        }*/
-        
-    }
+   
 }
