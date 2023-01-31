@@ -5,11 +5,12 @@ OcclusionCullingSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_OcclusionBakeSettings:
-    smallestOccluder: 5
+    smallestOccluder: 3
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 99c9720ab356a0642a771bea13969a05
+  m_OcclusionCullingData: {fileID: 36300000, guid: f116a1ee7c588924a929ebf84fb803f5,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -38,7 +39,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1838844, g: 0.22885552, b: 0.30209902, a: 1}
+  m_IndirectSpecularColor: {r: 0.4514308, g: 0.50075346, b: 0.5714064, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,6 +135,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -504,6 +509,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (12)
@@ -644,6 +653,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (3)
@@ -698,6 +711,86 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+--- !u!1 &51499107
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 51499108}
+  - component: {fileID: 51499110}
+  - component: {fileID: 51499109}
+  m_Layer: 0
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &51499108
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51499107}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1209141594}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &51499109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51499107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Button
+--- !u!222 &51499110
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 51499107}
+  m_CullTransparentMesh: 1
 --- !u!4 &51540907 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4429102427960218, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b,
@@ -852,6 +945,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -1343,6 +1440,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (2)
@@ -1741,6 +1842,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (54)
@@ -1805,6 +1910,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -1954,6 +2063,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -2554,6 +2667,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (25)
@@ -2757,6 +2874,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (44)
@@ -2827,6 +2948,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -2955,6 +3080,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -3446,6 +3575,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (29)
@@ -3730,6 +3863,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (14)
@@ -3800,6 +3937,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -4360,6 +4501,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (30)
@@ -4557,6 +4702,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (21)
@@ -4621,6 +4770,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -4854,7 +5007,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 5000
+  far clip plane: 200
   field of view: 65.6
   orthographic: 0
   orthographic size: 10
@@ -4880,7 +5033,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
-  m_LocalRotation: {x: 0.11990612, y: -0.6398423, z: 0.10199397, w: 0.75221115}
+  m_LocalRotation: {x: 0.11990613, y: -0.6398423, z: 0.10199396, w: 0.75221115}
   m_LocalPosition: {x: 46.27126, y: 3.0609999, z: 22.081009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5557,6 +5710,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (4)
@@ -5874,6 +6031,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -6404,6 +6565,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (36)
@@ -6468,6 +6633,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -6729,6 +6898,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (14)
@@ -6881,6 +7054,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (32)
@@ -7014,6 +7191,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -7499,6 +7680,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (38)
@@ -7827,6 +8012,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -8730,6 +8919,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (58)
@@ -8802,6 +8995,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -8994,6 +9191,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (49)
@@ -9064,6 +9265,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -9274,6 +9479,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (40)
@@ -9344,6 +9553,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -10127,6 +10340,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (24)
@@ -10191,6 +10408,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -10688,6 +10909,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (9)
@@ -10815,6 +11040,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -11038,6 +11267,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (11)
@@ -11245,6 +11478,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (39)
@@ -11441,6 +11678,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -11963,7 +12204,7 @@ MonoBehaviour:
     FieldOfView: 65.6
     OrthographicSize: 10
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 200
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -12163,6 +12404,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (13)
@@ -12228,6 +12473,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (37)
@@ -12292,6 +12541,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -12742,6 +12995,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (22)
@@ -12812,6 +13069,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -13004,6 +13265,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (30)
@@ -13150,6 +13415,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (42)
@@ -13214,6 +13483,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -13642,6 +13915,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (43)
@@ -13706,6 +13983,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -13897,6 +14178,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -14319,6 +14604,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (3)
@@ -14509,6 +14798,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -14776,6 +15069,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (15)
@@ -14904,6 +15201,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (10)
@@ -14968,6 +15269,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -15096,6 +15401,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -15848,6 +16157,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (10)
@@ -16269,6 +16582,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (5)
@@ -16365,7 +16682,7 @@ MonoBehaviour:
     FieldOfView: 65.6
     OrthographicSize: 10
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 200
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -16604,6 +16921,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -17025,6 +17346,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -17679,7 +18004,7 @@ MonoBehaviour:
     FieldOfView: 65.6
     OrthographicSize: 10
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 200
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -18041,6 +18366,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (45)
@@ -18168,6 +18497,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -18492,6 +18825,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (28)
@@ -18620,6 +18957,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (53)
@@ -18685,6 +19026,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (1)
@@ -18749,6 +19094,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -18930,6 +19279,140 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1208503969}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1209141593
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1209141594}
+  - component: {fileID: 1209141597}
+  - component: {fileID: 1209141596}
+  - component: {fileID: 1209141595}
+  m_Layer: 0
+  m_Name: Button (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1209141594
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209141593}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 51499108}
+  m_Father: {fileID: 1800288245}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.8, y: 0}
+  m_SizeDelta: {x: 289.3796, y: 128.9374}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1209141595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209141593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1209141596}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1800288241}
+        m_TargetAssemblyTypeName: CanvasScript, Assembly-CSharp
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1209141596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209141593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1209141597
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1209141593}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1209292164
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18940,6 +19423,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -19005,6 +19492,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -19134,6 +19625,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (12)
@@ -19210,6 +19705,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -19408,6 +19907,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (46)
@@ -19535,6 +20038,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -19673,7 +20180,7 @@ PrefabInstance:
     - target: {fileID: 2195311901308947304, guid: dc9bedbb650f5f9409c2161ad5f872f1,
         type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 8
+      value: 26
       objectReference: {fileID: 0}
     - target: {fileID: 2533760440387989058, guid: dc9bedbb650f5f9409c2161ad5f872f1,
         type: 3}
@@ -20115,6 +20622,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (15)
@@ -20179,6 +20690,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -20818,6 +21333,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (11)
@@ -21371,6 +21890,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (47)
@@ -21435,6 +21958,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -21770,6 +22297,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -22339,6 +22870,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (2)
@@ -22466,6 +23001,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -22721,6 +23260,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (7)
@@ -22785,6 +23328,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -22913,6 +23460,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -23201,6 +23752,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -23645,6 +24200,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (19)
@@ -23709,6 +24268,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -23838,6 +24401,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (34)
@@ -23908,6 +24475,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -24037,6 +24608,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (4)
@@ -24101,6 +24676,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -24292,6 +24871,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -24528,6 +25111,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (35)
@@ -24662,6 +25249,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (20)
@@ -24726,6 +25317,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -24920,6 +25515,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1443569972}
     m_Modifications:
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (51)
@@ -24980,6 +25579,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -25325,6 +25928,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (44)
@@ -25516,6 +26123,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -25915,6 +26526,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (55)
@@ -25986,6 +26601,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (43)
@@ -26050,6 +26669,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -26178,6 +26801,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -26510,6 +27137,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (3)
@@ -26644,6 +27275,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (28)
@@ -26708,6 +27343,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -26811,7 +27450,7 @@ MonoBehaviour:
     FieldOfView: 65.6
     OrthographicSize: 10
     NearClipPlane: 0.1
-    FarClipPlane: 5000
+    FarClipPlane: 200
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -26832,7 +27471,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789085121}
-  m_LocalRotation: {x: 0.1199061, y: -0.6398423, z: 0.10199395, w: 0.7522112}
+  m_LocalRotation: {x: 0.119906105, y: -0.6398423, z: 0.101993956, w: 0.75221115}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -26851,6 +27490,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -26918,6 +27561,120 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 263109564}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1800288240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1800288245}
+  - component: {fileID: 1800288244}
+  - component: {fileID: 1800288243}
+  - component: {fileID: 1800288242}
+  - component: {fileID: 1800288241}
+  m_Layer: 0
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1800288241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800288240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7586bcc5d9cc2c848a42fa5a6c312ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1800288242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800288240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &1800288243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800288240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 1920, y: 1080}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &1800288244
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800288240}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &1800288245
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1800288240}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1209141594}
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1001 &1811331984
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26928,6 +27685,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -26994,6 +27755,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (31)
@@ -27058,6 +27823,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -27186,6 +27955,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -27608,6 +28381,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (34)
@@ -27873,6 +28650,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -28364,6 +29145,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (16)
@@ -28491,6 +29276,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -28678,6 +29467,73 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1911165541}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1921924203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1921924206}
+  - component: {fileID: 1921924205}
+  - component: {fileID: 1921924204}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1921924204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921924203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1921924205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921924203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1921924206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1921924203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1925716793
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28815,6 +29671,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (38)
@@ -28885,6 +29745,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -29019,6 +29883,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -29412,6 +30280,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (9)
@@ -29476,6 +30348,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -29823,6 +30699,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -30458,6 +31338,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (18)
@@ -30522,6 +31406,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -30944,6 +31832,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (2)
@@ -31008,6 +31900,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -31143,6 +32039,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (41)
@@ -31207,6 +32107,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
@@ -31692,6 +32596,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name
       value: Toon Chick (29)
@@ -31756,6 +32664,10 @@ PrefabInstance:
     - target: {fileID: 1987485185, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1487214972516236, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1767663768970106, guid: ca9fda2f4d77c4d4f88d4ed8b939f69b, type: 3}
       propertyPath: m_Name

@@ -25,6 +25,7 @@ public class PlayerScript : MonoBehaviour
 
     private void Awake()
     {
+        Cursor.lockState = CursorLockMode.Locked;
         Application.targetFrameRate = 60;
     }
     void Start()
@@ -72,6 +73,8 @@ public class PlayerScript : MonoBehaviour
             attack2 = true;
             anim.Play("Attack2");
         }
+
+        
     }
 
     void Animation()
@@ -162,9 +165,8 @@ public class PlayerScript : MonoBehaviour
         attack1 = false;
     }
     void Attack02False()
-    {
-        attack2 = false;
-        
+    {       
+        attack2 = false;        
     }
     void Particulas1()
     {        
