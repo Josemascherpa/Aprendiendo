@@ -49,9 +49,8 @@ public class PollitoScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("pastito") && agente!=null)
-        {
-            
+        if (collision.gameObject.CompareTag("pastito") && agente!=null && !attackPlayer)
+        {            
             agente.enabled = false;
             Vector3 direction = collision.gameObject.transform.position - transform.position;
             Quaternion rotation = Quaternion.LookRotation(direction, Vector3.up);
@@ -59,8 +58,13 @@ public class PollitoScript : MonoBehaviour
             Physics.IgnoreCollision(this.transform.GetComponent<CapsuleCollider>(), collision.gameObject.transform.GetComponent<BoxCollider>());
             StartCoroutine(NuevoObjetivo());                        
             run = false;
-            eat = true;
-            
+            eat = true;            
+        }
+        if(collision.gameObject.CompareTag("Player") && attackPlayer)
+        {
+            Vector3 dir = collision.contacts[0].point - this.transform.position;           
+            dir = dir.normalized;
+            collision.gameObject.GetComponent<Rigidbody>().AddForce(dir * 5, ForceMode.Impulse);
         }
         
     }

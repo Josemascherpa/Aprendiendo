@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CanvasScript : MonoBehaviour
 {
+    [SerializeField] private GameObject b_Play;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +21,8 @@ public class CanvasScript : MonoBehaviour
     public void Play()
     {
         Time.timeScale = 1;
+        Cursor.lockState = CursorLockMode.Locked;
+        b_Play.SetActive(false);
     }
 }
 

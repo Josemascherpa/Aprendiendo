@@ -25,7 +25,7 @@ public class PlayerScript : MonoBehaviour
 
     private void Awake()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        
         Application.targetFrameRate = 60;
     }
     void Start()
@@ -139,8 +139,7 @@ public class PlayerScript : MonoBehaviour
         if(collision.gameObject.CompareTag("poio") && (attack1 || attack2))
         {            
             Instantiate(hitPoio, collision.contacts[0].point, Quaternion.identity);
-            Vector3 dir = collision.contacts[0].point - this.transform.position;
-            //SINO PROBAR CON IGNORAR LA COLISION DEL PLAYER
+            Vector3 dir = collision.contacts[0].point - this.transform.position;            
             dir = dir.normalized;            
             collision.gameObject.GetComponent<Rigidbody>().AddForce(dir * 20, ForceMode.Impulse);
             Destroy(collision.gameObject.GetComponent<NavMeshAgent>());
@@ -155,7 +154,7 @@ public class PlayerScript : MonoBehaviour
         yield return new WaitForSeconds(1f);//ACA PARTICULA DE POLLO EXPLOTADO
         
         Vector3 position = poioGO.transform.position;
-        Destroy(poioGO);
+        poioGO.SetActive(false);
         Instantiate(plumas, position, Quaternion.identity);
     }
 
